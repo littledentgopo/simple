@@ -1,4 +1,4 @@
-const urlParams = new URLSearchParams(window.location.search);
+const urlParams = new URLSearchParams(document.currentScript.src);
 const key = urlParams.get('key');
 const val = urlParams.get('val');
 const op = urlParams.get('op');
